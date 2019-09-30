@@ -259,7 +259,6 @@ export default {
     trimUnnecessaryEmptyLine: function (value, oldValue) {
       const { editor } = this
       if (value !== oldValue && editor) {
-        console.log(value)
         editor.setOptions({ trimUnnecessaryEmptyLine: value })
       }
     },
