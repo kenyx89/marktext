@@ -50,7 +50,7 @@ Lexer.prototype.token = function (src, top) {
   let l
   let checked
 
-  // Only check front matter at the begining of a markdown file.
+  // Only check front matter at the beginning of a markdown file.
   // Why "checkFrontmatter" and "top"? See note in "blockquote".
   if (frontMatter) {
     cap = this.rules.frontmatter.exec(src)
